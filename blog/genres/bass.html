@@ -1,0 +1,87 @@
+---
+layout: null
+title: Bass Music Blog - Discover New Songs And Playlists - SoundGrail
+description: SoundGrail's bass music blog helps you discover new music and playlists. Independent music news, reviews, features, interviews and videos.
+breadcrumb: Home
+permalink: /blog/bass/
+sitemap:
+    priority: 1.0
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include /default/head.html %}
+
+</head>
+<body class="full-layout">
+<div class="content-wrapper">
+
+  {% include /elements/nav-main.html %}
+
+  <!--/.navbar -->
+
+  <div class="light-wrapper">
+    <div class="container inner tp60">
+      <div class="blog row">
+        <div class="col-sm-8 blog-content list-view">
+          <div class="blog-content">
+            <div class="blog-post">
+
+
+
+              {% for post in site.posts %}
+
+              {% if post.genre contains "bass" %}
+              <div class="post row">
+                <!-- /column -->
+                <div class="col-md-12">
+                  <div class="post-content">
+                    <h3 class="post-title"><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>
+                    <div class="meta"><span class="date">{{ post.date | date_to_string }}</span><span class="comments"><a href="{{site.url}}{{ post.url }}">9 Comments</a></span><span class="category"><em class="red"><a href="#" class="line">{{ post.genre }}</a></em></span></div>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{site.url}}{{ post.url }}" class="more">Read more</a> </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /column -->
+              </div>
+              {% endif %}
+
+            {% endfor %}
+
+
+            </div>
+            <!-- /.blog-posts -->
+
+          </div>
+          <!-- /.blog-content -->
+
+          <!-- <div class="pagination">
+            <ul>
+              <li><a class="btn btn-square btn-icon" href="{{site.url}}/blog/"><i class="ion-android-arrow-back"></i></a></li>
+              <li class="active"><a class="btn btn-square" href="{{site.url}}/blog/"><span>1</span></a></li>
+              <li><a class="btn btn-square" href="{{site.url}}/blog/"><span>2</span></a></li>
+              <li><a class="btn btn-square btn-icon" href="{{site.url}}/blog/"><i class="ion-android-arrow-forward"></i></a></li>
+            </ul>
+          </div> -->
+          <!-- /.pagination -->
+
+        </div>
+        <!-- /.blog-content -->
+
+        {% include /modules/sidebar-blog.html %}
+
+
+      </div>
+      <!-- /.blog -->
+
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.light-wrapper -->
+
+</div>
+
+  {% include /default/foot.html %}
+
+</body>
+</html>
