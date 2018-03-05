@@ -13,6 +13,7 @@ url:                https://music.soundgrail.com
 trailing: "/"
 enforce_ssl: music.soundgrail.com   # without any protocol
 
+
 default-lastmod: "2018-03-04T00:20:35+00:00"
 
 includes:
