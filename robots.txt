@@ -44,4 +44,4 @@ Disallow: *?page=
 #
 # EVENTUALLY REMOVE
 #
-Sitemap: https://soundgrail.com/sitemap.xml
+Sitemap: https://music.soundgrail.com/sitemap.xml
