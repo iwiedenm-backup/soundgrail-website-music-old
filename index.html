@@ -26,39 +26,7 @@ sitemap:
           <div class="blog-content">
             <div class="blog-post">
 
-              {% for post in paginator.posts %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-                {% assign author = site.authors | where: 'title', post.author | first %}
-
-              <div class="post row">
-                <div class="col-md-5">
-                  <figure class="overlay"><a href="{{site.url}}{{ post.url }}"> <img src="{{site.url}}/blog/posts/{{ post.post_id }}/teaser.jpg" alt="{{ post.title }}" /></a></figure>
-                </div>
-                <!-- /column -->
-                <div class="col-md-7">
-                  <div class="post-content">
-                    <h3 class="post-title"><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>
-                    <div class="meta"><span class="date">{{ post.date | date_to_string }}</span><span class="comments"><a href="{{site.url}}{{ post.url }}">9 Comments</a></span><span class="category"><em class="red"><a href="#" class="line">{{ post.genre }}</a></em></span></div>
-                    <p>{{ post.excerpt }}</p>
-                    <a href="{{site.url}}{{ post.url }}" class="more">Read more</a> </div>
-                  <!-- /.post-content -->
-                </div>
-                <!-- /column -->
-              </div>
-
-              {% if mod3 == 0 %}
-              <div class="post">
-                <div class="box box-bg bg-white">
-                  <div class="row">
-                    <div class="col-12">
-                      {% include /adunits/inner-adsense-infeed.html %}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {% endif %}
-
-            {% endfor %}
+                <p>Check our our blog! <a href="https://music.soundgrail.com/blog/">here</a></p>
 
 
             </div>
