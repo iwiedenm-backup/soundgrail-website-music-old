@@ -2,32 +2,20 @@ User-agent: *
 #
 # Submission Pages
 #
-Noindex: /promotion/music-blog-feature/submission/
-Disallow: /promotion/music-blog-feature/submission/
-Noindex: /promotion/spotify-playlist/submission/
-Disallow: /promotion/spotify-playlist/submission/
+
 #
 # Generic Pages
 #
-Disallow: /packages/soundcloud-repost/free/submission/
-Noindex: /packages/soundcloud-repost/free/submission/
+
 #
 # Sneaky Pages
 #
-Disallow: /app/
-Noindex: /app/
 Disallow: /blog/unused/
 Noindex: /blog/unused/
-Disallow: /template/
-Noindex: /template/
 Disallow: /xyz/
 Noindex: /xyz/
-Disallow: /xadtest/
-Noindex: /xadtest/
 Disallow: /forms/
 Noindex: /forms/
-Disallow: /app-articles/
-Noindex: /app-articles/
 #
 # PROTECTION
 #
