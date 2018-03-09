@@ -6,138 +6,98 @@ layout: null
 <head>
   {% include /default/head.html %}
 
-  <!-- plugins -->
-  <!-- <link rel="stylesheet" href="/assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" type="text/css" /> -->
-
 </head>
-<body class="shop home-page">
+<body class="full-layout">
+<div class="content-wrapper">
 
-  {% include /elements/nav.html %}
+  {% include /elements/nav-main.html %}
 
-	<div class="wrapper reveal-side-navigation">
-		<div class="wrapper-inner">
+  <!--/.navbar -->
 
-			<!-- Header -->
-      {% include /elements/nav-main.html %}
-
-			<!-- Header End -->
-
-      <!-- Content -->
-			<div class="content clearfix">
-
-				<!-- Intro Title Section 2 -->
-				<div class="section-block intro-title-1 small bkg-grey-ultralight">
-					<div class="row">
-						<div class="column width-12">
-							<div class="title-container">
-								<div class="title-container-inner">
-									<div class="row flex">
-                    <div class="column width-6 v-align-middle">
-											<div>
-												<h1 class="mb-0">SoundGrail Blog</h1>
-												<p class="lead mb-0 mb-mobile-20">{{ page.title }}</p>
-											</div>
-										</div>
-										<div class="column width-6 v-align-middle">
-											<!-- <div>
-												<ul class="breadcrumb mb-0 pull-right clear-float-on-mobile">
-													<li>
-														<a href="index.html">Home</a>
-													</li>
-													<li>
-														Blog
-													</li>
-												</ul>
-											</div> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Intro Title Section 2 End -->
-
-				<div class="section-block clearfix pt-0 pb-0 bkg-grey-ultralight">
-					<div class="row">
-
-						<!-- Content Inner -->
-            <div class="column width-8 content-inner blog-single-post">
-							<article class="post">
-								<div class="post-content with-background">
-									<h2 class="post-title center">{{ page.title }}</h2>
-									<div class="post-info center">
-										<span class="post-date">{{ page.date | date_to_string }}</span>, in <span class="post-category"><a href="#">Development</a></span>, <span class="post-tags"><span><a href="#" class="post-tag label small rounded border-pink color-pink bkg-hover-pink bkg-hover-white">Press Release</a></span></span>
-									</div>
-                  <div class="post-media thumbnail">
-                    <img src="{{site.url}}/blog/posts/{{ page.post_id }}/header.jpg" alt="{{ page.title }}" style="transition-duration: 400ms; transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);">
-                  </div>
+  <div class="light-wrapper">
+    <div class="container inner tp60">
+      <div class="blog row">
+        <div class="col-sm-8">
+          <div class="blog-content classic-view">
+            <div class="blog-posts">
+              <div class="post">
+                <div class="post-content">
+                  <figure><img src="{{site.url}}/blog/posts/{{ page.post_id }}/header.jpg" alt="{{ page.title }}" /></figure>
+                  <h1 class="post-title text-center">{{ page.title }}</h1>
+                  <div class="meta text-center"><span class="date">{{ page.date }}</span><span class="comments"><a href="#">7 Comments</a></span><span class="category"><em class="orange"><a href="#" class="line">{{ page.genre }}</a></em></span></div>
                   {{ content }}
-									<!-- <div class="post-author">
-										<div class="row">
-											<div class="column width-12">
-												<div class="author-bio">
-													<div class="author-avatar clear-float">
-														<img src="images/blog/bio-avatar-2.jpg" alt="Avatar">
-													</div>
-													<div class="author-content">
-														<div class="row">
-															<div class="column width-12">
-																<div class="name">by <a href="#">Henry Valiant</a></div>
-																<p class="author-title">WordPress Evangelist, JS Guru and Beer Lover</p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div> -->
-								</div>
-							</article>
+                  <div class="meta tags text-center"><a href="#">journal</a>, <a href="#">illustration</a>, <a href="#">design</a>, <a href="#">daily</a></div>
+                  <div class="share share-wrapper text-center"> <a href="#" class="btn btn-share share-facebook">Like</a> <a href="#" class="btn btn-share share-twitter">Tweet</a> <a href="#" class="btn btn-share share-pinterest">Pin It</a> </div>
+                  <!-- /.share-wrapper -->
 
-							<!-- Post Comments -->
-							<div class="post-comments with-background">
-								<h3 class="comments-title">Comments</h3>
-                {% include /modules/comments.html %}
+                  <hr />
+                  <div class="post-nav-wrapper">
+                    <div class="post-nav prev">
+                      <div class="meta"><i class="ion-android-arrow-back"></i> Previous Article</div>
+                      <h3 class="post-title"><a href="{{site.url}}/blog/">SoundGrail Music Blog</a></h3>
+                    </div>
+                    <div class="post-nav next">
+                      <div class="meta">Next Article <i class="ion-android-arrow-forward"></i></div>
+                      <h3 class="post-title"><a href="{{site.url}}/blog/">SoundGrail Music Blog</a></h3>
+                    </div>
+                  </div>
+                  <!-- /.post-nav -->
 
-							</div>
+                  <hr />
+                  <div class="about-author text-left">
+                    <div class="author-image"> <img alt="Picture of SoundGrail author Ian" src="/assets/style/images/art/author.jpg" /> </div>
+                    <h4>About the Author</h4>
+                    <p>Ian is an official blogger of SoundGrail and prefers heavy hitters with lush elements.</p>
+                    <!-- <ul class="social">
+                      <li> <a href="#"><i class="ion-social-facebook"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-twitter"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-instagram"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-vimeo"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-linkedin"></i></a> </li>
+                    </ul> -->
+                    <div class="clearfix"></div>
+                  </div>
+                  <!-- .about-author -->
 
-						</div>
-						<!-- Content Inner End -->
+                  <hr />
+                  <div id="comments" class="text-left">
+                    <h4>Comments</h4>
+                    {% include /modules/comments.html %}
+                  </div>
+                  <!-- /#comments -->
 
-						<!-- Sidebar -->
-						{% include /modules/sidebar-blog.html %}
-						<!-- Sidebar End -->
+                  <hr />
+                </div>
+                <!-- /.post-content -->
 
-					</div>
-				</div>
+              </div>
+              <!-- /.post -->
 
-				<!-- Pagination Section 3 -->
-				<div id="pagination" class="section-block pagination-3 bkg-grey-ultralight">
-					<div class="row">
-						<!-- <div class="column width-12">
-							<ul>
-								<li><a class="pagination-previous icon-left-open" href="#"><span class="icon-left-open-mini"></span></a></li>
-								<li><a class="current" href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a class="pagination-next disabled" href="#"><span class="icon-right-open-mini"></span></a></li>
-							</ul>
-						</div> -->
-					</div>
-				</div>
-				<!-- Pagination Section 3 End -->
+            </div>
+            <!-- /.blog-posts -->
 
-			</div>
+          </div>
+          <!-- /.classic-view -->
 
-			{% include /elements/foot.html %}
+        </div>
+        <!-- /.blog-content -->
 
-		</div>
-	</div>
+        {% include /modules/sidebar-blog.html %}
+
+
+        <!-- /column .sidebar -->
+
+      </div>
+      <!-- /.blog -->
+
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.light-wrapper -->
+
+</div>
 
   {% include /default/foot.html %}
-
 
 </body>
 </html>
