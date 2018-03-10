@@ -21,9 +21,7 @@ includes:
 
 
 collections:
-  products:
-    title: Products
-    output: true
+
 
 defaults:
 - scope:
