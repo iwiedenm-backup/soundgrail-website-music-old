@@ -12,54 +12,287 @@ sitemap:
 <head>
   {% include /default/head.html %}
 
-  <!-- plugins -->
-  <!-- <link rel="stylesheet" href="/assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" type="text/css" /> -->
-
 </head>
-<body class="shop home-page">
+<body class="full-layout">
+<div class="content-wrapper">
 
-  {% include /elements/nav.html %}
+  {% include /elements/nav-main.html %}
 
-	<div class="wrapper reveal-side-navigation">
-		<div class="wrapper-inner">
+  <!--/.navbar -->
 
-			<!-- Header -->
-      {% include /elements/nav-main.html %}
-
-			<!-- Header End -->
-
-			<!-- Content -->
-      <!-- Content -->
-    <div class="content clearfix">
-
-      <!-- 404 Section -->
-      <div class="section-block bkg-pink pt-150 pb-150">
-        <div class="row flex v-align-middle">
-          <div class="column width-8 left">
-            <h1 class="status-code-title color-white">Darn!</h1>
-            <h3 class="title-medium color-white"><span class="status-code weight-bold">404</span>: We can't seem to find the page you're looking for.</h3>
-            <ul class="lead list-unstyled mb-0 color-white">
-              <li><a href="{{site.url}}">SoundGrail Home</a></li>
-            </ul>
-          </div>
-        </div>
+  <div class="rev_slider_wrapper">
+    <div id="slider1" class="rev_slider" data-version="5.0">
+      <ul>
+        <li data-transition="slidevertical" data-fstransition="fade"> <img src="/assets/images/custom/soundgrail-night-festival.jpg" alt="SoundGrail cover photo night festival" /> </li>
+      </ul>
+      <div class="tp-static-layers">
+        <div class="tp-caption tp-static-layer large text-center" data-x="center" data-y="center" data-voffset="['-30','-30','-30','-30']" data-fontsize="['45','45','45','45']" data-start="500" data-splitin="none" data-splitout="none" data-responsive="on" data-responsive_offset="on" data-startslide="0" data-endslide="3" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" style="z-index: 5;">Welcome to SoundGrail</div>
+        <div class="tp-caption tp-static-layer medium text-center" data-x="center" data-y="center" data-voffset="['30','30','30','30']" data-fontsize="['26','26','26','26']" data-start="1000" data-splitin="none" data-splitout="none" data-responsive="on" data-responsive_offset="on" data-startslide="0" data-endslide="3" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" style="z-index: 5;">Where good music lives</div>
       </div>
-      <!-- 404 Section End -->
-      {% include /modules/latest-blog.html %}
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+  </div>
+
+
+  <!-- <div class="divide60"></div>
+  <div class="hero text-center">
+    <p>Hello! Thanks for taking some time to visit Studio Juno's portfolio. <br class="hidden-xs hidden-sm" />
+      Here you will be able to find our latest and favorite works.</p>
+  </div> -->
+  <!-- /.hero -->
+
+  <div class="light-wrapper">
+    <div class="container inner tp60">
+      <!-- <div class="rev_slider_wrapper">
+        <div id="slider2" class="rev_slider" data-version="5.0">
+          <ul>
+            <li data-transition="random" data-fstransition="fade"> <img src="/assets/style//images/art/slider-bg4.jpg" alt="" />
+              <div class="tp-caption light-layer large" data-x="left" data-hoffset="70" data-y="top" data-voffset="70" data-fontsize="['18','18','18','18']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="500" data-splitin="none" data-splitout="none" data-responsive="on"  data-responsive_offset="on" style="z-index: 9;">Dapibus Amet Tristique Consectetur</div>
+              <div class="tp-caption light-layer medium" data-x="left" data-hoffset="70" data-y="top" data-voffset="130" data-fontsize="['16','16','16','16']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive="on"  data-responsive_offset="on" style="z-index: 9;">Cras mattis consectetur purus sit amet fermentum</div>
+            </li>
+            <li data-transition="random"> <img src="/assets/style//images/art/slider-bg5.jpg" alt="" />
+              <div class="tp-caption light-layer large" data-x="left" data-hoffset="70" data-y="bottom" data-voffset="130" data-fontsize="['18','18','18','18']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="500" data-splitin="none" data-splitout="none" data-responsive="on"  data-responsive_offset="on" style="z-index: 9;">Ligula Ullamcorper Ornare Euismod</div>
+              <div class="tp-caption light-layer medium" data-x="left" data-hoffset="70" data-y="bottom" data-voffset="70" data-fontsize="['16','16','16','16']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive="on"  data-responsive_offset="on" style="z-index: 9;">Integer posuere venenatis dapibus posuere</div>
+            </li>
+            <li data-transition="random"> <img src="/assets/style//images/art/slider-bg6.jpg" alt="" />
+              <div class="tp-caption light-layer large" data-x="left" data-hoffset="['600','600','350','350']" data-y="center" data-voffset="-30" data-fontsize="['18','18','18','18']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="500" data-splitin="none" data-splitout="none" data-responsive="on"  data-responsive_offset="on" style="z-index: 9;">Commodo Porta Mattis Vulputate</div>
+              <div class="tp-caption light-layer medium" data-x="left" data-hoffset="['600','600','350','350']" data-y="center" data-voffset="30" data-fontsize="['16','16','16','16']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive="on"  data-responsive_offset="on" style="z-index: 9;">Vivamus sagittis lacus vel augue laoreet</div>
+            </li>
+            <li data-transition="fade"><img src="/assets/style//video/fish.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina="" />
+              <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="/assets/style//video/fish.mp4" data-videopreload="preload" data-videoloop="none" data-forcecover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true" data-dottedoverlay="darkoverlay"></div>
+            </li>
+          </ul>
+          <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+      </div> -->
+      <!-- /.rev_slider -->
+
+      <div class="divide60"></div>
+      <div class="hero text-center">
+        <p>At the SoundGrail Music Blog we strive to share with you only the hottest new acts in the scene. Check out some of our featured artists below.<br class="hidden-xs hidden-sm" />
+          </p>
+      </div>
+      <!-- /.hero -->
+
+      <h2 class="section-title text-center">Our Featured Artsits</h2>
+      <div class="tiles">
+        <div class="items row row-offset-0">
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <figure class="overlay"> <a href="{{site.url}}/blog/future-bass/">
+              <div class="text-overlay caption">
+                <div class="info">
+                  <h2 class="post-title">Future Bass</h2>
+                  <div class="meta"> <span class="count">{% assign counter = 1 %}{% for item in site.posts %}{% if item.genre == 'future-bass' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }}</span> <span class="">Artists</span></div>
+                </div>
+              </div>
+              <img src="/assets/images/custom/future-bass-artists.jpg" alt="SoundGrail Future bass artists" /></a> </figure>
+          </div>
+          <!--/column -->
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <figure class="overlay"> <a href="{{site.url}}/blog/trap/">
+              <div class="text-overlay caption">
+                <div class="info">
+                  <h2 class="post-title">Trap</h2>
+                  <div class="meta"> <span class="count">{% assign counter = 1 %}{% for item in site.posts %}{% if item.genre == 'trap' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }}</span> <span class="">Artists</span></div>
+                </div>
+              </div>
+              <img src="/assets/images/custom/trap-artists.jpg" alt="SoundGrail trap artists" /></a> </figure>
+          </div>
+          <!--/column -->
+
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+              <figure class="overlay"> <a href="{{site.url}}/blog/hip-hop/">
+              <div class="text-overlay caption">
+                <div class="info">
+                  <h2 class="post-title">Hip-Hop</h2>
+                  <div class="meta"> <span class="count">{% assign counter = 1 %}{% for item in site.posts %}{% if item.genre == 'hip-hop' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }}</span> <span class="category">Artists</span></div>
+                </div>
+              </div>
+              <img src="/assets/images/custom/hip-hop-artists.jpg" alt="SoundGrail hip-hop artists" /></a> </figure>
+          </div>
+          <!--/column -->
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+              <figure class="overlay"> <a href="{{site.url}}/blog/dubstep/">
+              <div class="text-overlay caption">
+                <div class="info">
+                  <h2 class="post-title">Dubstep</h2>
+                  <div class="meta"> <span class="count">{% assign counter = 1 %}{% for item in site.posts %}{% if item.genre == 'dubstep' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }}</span> <span class="category">Artists</span></div>
+                </div>
+              </div>
+              <img src="/assets/images/custom/dubstep-artists.jpg" alt="SoundGrail dubstep artists" /></a> </figure>
+          </div>
+          <!--/column -->
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <figure class="overlay"> <a href="{{site.url}}/blog/bass-music/">
+              <div class="text-overlay caption">
+                <div class="info">
+                  <h2 class="post-title">Bass Music</h2>
+                  <div class="meta"> <span class="count">{% assign counter = 1 %}{% for item in site.posts %}{% if item.genre == 'bass' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }}</span> <span class="category">Artists</span></div>
+                </div>
+              </div>
+              <img src="/assets/images/custom/bass-music-artists.jpg" alt="SoundGrail bass music artists" /></a> </figure>
+          </div>
+          <!--/column -->
+
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <figure class="overlay"> <a href="{{site.url}}/blog/">
+              <div class="text-overlay caption">
+                <div class="info">
+                  <h2 class="post-title">And more...</h2>
+                  <div class="meta"> <span class="count">Discover the unexpected</span> </div>
+                </div>
+              </div>
+              <img src="/assets/images/custom/more-artists.jpg" alt="SoundGrail more music artists" /></a> </figure>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.tiles -->
+
 
     </div>
-    <!-- Content End -->
+    <!-- /.container -->
+  </div>
+
+  <div class="inverse-wrapper">
+    <div class="container inner">
+      <h2 class="section-title text-center">Discover the sound you never knew you were looking for</h2>
+      <!-- <div class="tiles instagram">
+        <div id="instafeed" class="items row row-offset-0"></div>
+      </div> -->
+      <!--/.tiles -->
+
+      <!-- <div class="divide30"></div> -->
+      <div class="text-center"><a href="https://music.soundgrail.com/blog/" class="btn btn-red">Check out the blog</a></div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.inverse-wrapper -->
+
+  <div class="light-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="section-title text-center">Our Featured Spotify Playlists</h2>
+          <p class="lead text-center">Our curated palylists cover a wide range of music genres and we're sure they'll get you in the mood for whatever you want to accomplish today.</p>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+      <div class="divide10"></div>
+      <div class="blog list-view row">
+        <div class="col-sm-6">
+          <div class="post bm30">
+            <figure> <img src="/assets/images/custom/party-playlist.jpg" alt="SoundGrail party playlist" />
+              <figcaption>
+                <div class="inner">
+                  <h4>Party<br />
+                    Playlist</h4>
+                  <p>Get pumped for a good night.</p>
+                  <p><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/3iDzamjyycYASUsX6uuTf8?si=Oy-Ul9vERbOMT2nr-YVWnA">Listen now</a> </p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- /.post -->
+        </div>
+        <!-- /column -->
+        <div class="col-sm-6">
+          <div class="post bm30">
+            <figure> <img src="/assets/images/custom/chill-playlist.jpg" alt="SoundGrail chill playlist" />
+              <figcaption>
+                <div class="inner">
+                  <h4>Chill<br />
+                    Playlist</h4>
+                  <p>Chillout and do whatever.</p>
+                  <p><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/2Qo21nS5jkdec0gFfZ7Lzh?si=YqWP_M9jQKaqlr1GI2BV0A">Listen now</a> </p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- /.post -->
+        </div>
+        <!-- /column -->
+        <div class="col-sm-6">
+          <div class="post bm30">
+            <figure> <img src="/assets/images/custom/trippy-playlist.jpg" alt="SoundGrail trippy playlist" />
+              <figcaption>
+                <div class="inner">
+                  <h4>Trippy<br />
+                    Playlist</h4>
+                  <p>Let us take you to another world.</p>
+                  <p><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/0Wmxb6y0P3JAmDDJGL1MC4?si=qEwKVcU5TumvdbIZ9lr1DQ">Listen now</a> </p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- /.post -->
+        </div>
+        <!-- /column -->
+        <div class="col-sm-6">
+          <div class="post bm30">
+            <figure> <img src="/assets/images/custom/top-100-playlist.jpg" alt="SoundGrail top 100 playlist" />
+              <figcaption>
+                <div class="inner">
+                  <h4>SoundGrail Selects<br />
+                    Playlist</h4>
+                  <p>Listen to the cream of the crop.</p>
+                  <p><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/6va7zra7cPqPdV77AR4QDb?si=Dl7GOMwTQqqHToP1S3nqzg">Listen now</a> </p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- /.post -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </div>
+
+  <div class="dark-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2 class="section-title">About Us</h2>
+          <p class="lead">SoundGrail was founded in August 2010 with only a few dedicated followers. It has since grown to be a family of writers and music lovers from across the globe. </p>
+        </div>
+        <!-- /column -->
+
+        <div class="col-sm-4">
+          <h2 class="section-title">Why Choose Us?</h2>
+          <!-- <p class="">We support one genre and one genre only. That is, good music. In other words, it doesn't matter if you make hip-hop, rap, indie, or one of the many sub-styles of electronic music, we appreciate all walks of life.</p> -->
+          <p class="">We're looking to promote new, undiscovered music that will move us - physically and emotionally. We want music that challenges the forefront of sound and takes risks. That's what music is all about. It should take the listener to place he or she has never been or seen. Take a chance and experiment because there are too many copycats (musically and lyrically) today.</p>
+          <!-- <p class="">There's so much brilliant, undiscovered music out there. We wanted to develop a platform to showcase and celebrate the creativity and passion of musicians, artists and bands that we love and hope to share with the world via our music blog platform.</p> -->
+          <!-- <p>Think about this for a second. How many of your favorite artists were recommended to you by a friend? Probably a lot. Thus, we hope to serve you top-quality music that we would not be embarrassed to talk about with our own friends. </p> -->
+
+        </div>
+
+        <div class="col-sm-4">
+          <h2 class="section-title">SoudnGrail is unique</h2>
+          <p>Our writers and influencers will bring you the best music, including indie rock, hip hop, electronic, and everything in between. This music is discovered and listened to by real music lovers.</p>
+          <p>We will give you feedback on your submission regardless of whether it was accepted or not. The feedback will be honest and it should never be taken as a personal criticism.</p>
+          <!-- <p>As well as featuring new tracks as part of our weekly playlists or as individual posts, we also review albums, EPs and events and host Introducing interviews.</p> -->
+          <!-- <p>If you’d like your music featured on SoundGrail, go ahead and send us your Soundcloud or Youtube song URL, and a little about who you are and your social media links. </p> -->
+        </div>
+        <!-- /column -->
+
+      </div>
+      <!-- /.row -->
+
+      <div class="divide90"></div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </div>
 
 
-			<!-- Content End -->
-
-			{% include /elements/foot.html %}
-
-		</div>
-	</div>
+</div>
 
   {% include /default/foot.html %}
-
 
 </body>
 </html>
