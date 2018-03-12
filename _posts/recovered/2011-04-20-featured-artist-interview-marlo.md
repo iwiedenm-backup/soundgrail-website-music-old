@@ -72,4 +72,4 @@ _So where do you go from here? What releases should your fans be getting excited
 
 **MaRLo:** My next single “MaRLo ft Jano – The Island” I am very excited about it, it will have a professional video clip and I’m really happy with how the track turned out… it will be out at the end of May.
 
-There are quite a few big events and festivals coming up, so you can subscribe to my mailing list on [www.marlomusic.com](www.marlomusic.com) to receive all the latest news and updates.
+There are quite a few big events and festivals coming up, so you can subscribe to my mailing list on [www.marlomusic.com](http://www.marlomusic.com) to receive all the latest news and updates.
