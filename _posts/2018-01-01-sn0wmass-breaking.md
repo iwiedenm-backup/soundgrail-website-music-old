@@ -9,7 +9,7 @@ post_id: "post-1"
 genre: "bass"
 teaser:
   type: "soundcloud"
-  source: null
+  source: soundcloud.com/snowmassmusic/breaking-1
 ---
 
 The producer's new single "Breaking" literally breaks the barriers of genres with elements from all styles of bass music.

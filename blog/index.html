@@ -35,7 +35,7 @@ sitemap:
                   {% if post.teaser.type == "image" %}
                   <figure class="overlay"><a href="{{site.url}}{{ post.url }}"> <img src="{{site.url}}/blog/posts/{{ post.post_id }}/teaser.jpg" alt="{{ post.title }}" /></a></figure>
                   {% elsif post.teaser.type == "soundcloud" %}
-                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/408977091&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//{{ post.teaser.source }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                   {% endif %}
                 </div>
                 <!-- /column -->
