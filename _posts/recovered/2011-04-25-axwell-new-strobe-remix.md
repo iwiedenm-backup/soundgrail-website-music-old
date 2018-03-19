@@ -5,7 +5,7 @@ date:   2011-04-25
 excerpt: "Shout out to this new remix of a song I usually would say should never be remixed, Deadmau5’s gorgeous 'Strobe'"
 tags: [creating, winning, content]
 genre: "dubstep"
-content:
+teaser:
   type: "image"
   source: null
 author: "Ian"

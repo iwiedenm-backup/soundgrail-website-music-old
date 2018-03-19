@@ -5,7 +5,7 @@ date:   2011-04-20
 excerpt: "Although he may be categorized as Trance by Beatport, the simple term seems too constraining to properly describe his artistic style. MaRLo brings some of sharper melodies of techno and overlays..."
 tags: [creating, winning, content]
 genre: "bass"
-content:
+teaser:
   type: "image"
   source: null
 author: "Ian"

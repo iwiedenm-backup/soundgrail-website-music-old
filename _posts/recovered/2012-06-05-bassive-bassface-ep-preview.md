@@ -5,7 +5,7 @@ date:   2012-06-05
 excerpt: "Bassive has had several top-100 and featured releases on BeatPort under some of the biggest labels in the industry, including Big Fish Recordings, Big Alliance, and more!"
 tags: [creating, winning, content]
 genre: "bass"
-content:
+teaser:
   type: "image"
   source: null
 author: "Ian"

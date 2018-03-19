@@ -7,6 +7,9 @@ tags: [music, edm, electronic]
 author: "Samantha"
 post_id: "post-1"
 genre: "bass"
+teaser:
+  type: "soundcloud"
+  source: null
 ---
 
 The producer's new single "Breaking" literally breaks the barriers of genres with elements from all styles of bass music.

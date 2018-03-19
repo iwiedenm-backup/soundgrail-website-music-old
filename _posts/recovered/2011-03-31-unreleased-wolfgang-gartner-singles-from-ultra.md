@@ -5,7 +5,7 @@ date:   2011-03-31
 excerpt: "Although one can never be 100% sure the track you're listening to isn’t one you just happened to have missed, I'm still pretty sure that what we have here are new tracks from Wolfgang upcoming album."
 tags: [creating, winning, content]
 genre: "dubstep"
-content:
+teaser:
   type: "image"
   source: null
 author: "Ian"

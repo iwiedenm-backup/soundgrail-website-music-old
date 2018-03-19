@@ -5,7 +5,7 @@ date:   2011-05-12
 excerpt: "The next time you show someone Strobe and they look at you with a 'So?' look on their face you can possibly blame their biology, not their horrendous taste in music."
 tags: [creating, winning, content]
 genre: "dubstep"
-content:
+teaser:
   type: "image"
   source: null
 author: "Ian"
