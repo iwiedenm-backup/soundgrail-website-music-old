@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Eko Zu Unravel New Single "Get Em""
+title:  "Eko Zu Unravel New Single 'Get Em'"
 date:   2018-03-19
 excerpt: "Eko Zu, a trio based out of Los Angeles, have unraveled a new single 'Get Em'. "
 tags: [music, edm, electronic]
