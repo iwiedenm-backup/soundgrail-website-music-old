@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "San Holo's Ballad 'I Still See Your Face'"
-date:   2018-09-15
+date:   2017-09-15
 excerpt: "San Holo's voice floats over an intricate, organic production that picks up into a proper build and natural drop which gives this track an extra dreamy, nostalgic vibe."
 tags: [music, edm, electronic]
 author: "Samantha"

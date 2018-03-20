@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ekali and Zhu with a Trend-setting Collab 'Blame'"
-date:   2018-12-29
+date:   2017-12-29
 excerpt: "ZHU and Ekali have teamed up to release a free download on OWSLA called 'Blame.'"
 tags: [music, edm, electronic]
 author: "Samantha"
