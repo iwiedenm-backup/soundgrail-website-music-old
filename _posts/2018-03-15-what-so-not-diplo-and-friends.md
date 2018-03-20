@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What So Not Makes follows his album with a debut on Diplo & Friends"
+title:  "What So Not follows his album with a debut on Diplo & Friends"
 date:   2018-03-15
 excerpt: "What So Not follows the 12 song, full-lengthed album with a long-awaited spot on Diplo and Friends."
 tags: [music, edm, electronic]
