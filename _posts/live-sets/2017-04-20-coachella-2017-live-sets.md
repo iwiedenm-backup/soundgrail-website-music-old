@@ -19,5 +19,3 @@ What you can expect from Coachella's Live Sets in 2017?
 You can definitely expect lots of unreleased music huge moments from both crowds and artists alike. So whether you're hanging out at home, killing time in the car, or whatever else, relax and listen to these live sets from Coachella 2017!
 
 [Check out the live sets](https://www.1001tracklists.com/source/gykm53/coachella-festival/index.html)
-
-{% include /helpers/blog-track-sc.html source="soundcloud.com/trento-sanchez/sets/justice-coachella-2017" %}
