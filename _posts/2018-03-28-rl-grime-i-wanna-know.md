@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rl Grime & Daya 'I Wanna Know' Goes Hard and Hits Deep"
-date:   2018-03-22
+date:   2018-03-28
 excerpt: "The Los Angeles producer whips up a new banger earlier this with Daya called 'I wanna Know' and it's absolutely beautiful in every way. "
 tags: [music, edm, electronic]
 author: "Samantha"
