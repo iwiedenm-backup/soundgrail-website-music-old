@@ -15,4 +15,4 @@ Brought to you by All Kindza Beats, here's a dope trap remix of Get Right Witcha
 
 The hard 808 drums stacked with the loud, punchy kick you can hear in this remix really add another level to this song. Make sure to take a minute to listen to this crazy Migos remix, it's worth the time!
 
-For more fire beats and remixes, check out AKB'S beatstore at [allkindzabeats.com](allkindzabeats.com)
+For more fire beats and remixes, check out AKB'S beatstore at [https://allkindzabeats.com](https://allkindzabeats.com)
