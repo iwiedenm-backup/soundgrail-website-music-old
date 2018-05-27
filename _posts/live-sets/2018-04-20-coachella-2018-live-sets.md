@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Listen to Live Sets from Coachella 2018"
-date:   2017-04-20
+date:   2018-04-20
 excerpt: "What you can expect from Coachella's Live Sets in 2018? You can definitely expect lots of unreleased music huge moments from both crowds and artists alike."
 tags: [music, edm, electronic]
 author: "Samantha"

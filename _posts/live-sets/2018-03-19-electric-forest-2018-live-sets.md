@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Listen to Live Sets from Electric Forest 2017"
-date:   2017-03-19
+date:   2018-03-19
 excerpt: "What you can expect from Electric Forest's Live Sets in 2017? You can definitely expect lots of unreleased music huge moments from both crowds and artists alike."
 tags: [music, edm, electronic]
 author: "Samantha"
@@ -15,7 +15,7 @@ Electric Forest is one of the best festivals in North America featuring vibey se
 
 Whether you missed these artists this year or are looking to relive some moments, these recorded live sets from Electric Forest 2017 will bring the same amount of joy they did when first played. Relive these beautiful moments and tune in to this list! Bookmark the page for easy access in the future!
 
-What you can expect from Electric Forest's Live Sets in 2017?
+What you can expect from Electric Forest's Live Sets in 2018?
 You can definitely expect lots of unreleased music huge moments from both crowds and artists alike. So whether you're hanging out at home, killing time in the car, or whatever else, relax and listen to these live sets from Electric Forest 2017!
 
 [Check out the live sets](https://www.1001tracklists.com/source/gfvbhc/electric-forest-festival/index.html)
