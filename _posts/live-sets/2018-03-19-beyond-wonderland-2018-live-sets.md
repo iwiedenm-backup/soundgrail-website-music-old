@@ -16,4 +16,6 @@ Insomniac had a banner year for one of its most hyped festivals of the year "Bey
 What you can expect from Beyond Wonderland's Live Sets in 2018?
 You can definitely expect lots of unreleased music huge moments from both crowds and artists alike. So whether you're hanging out at home, killing time in the car, or whatever else, relax and listen to these live sets from Beyond Wonderland 2018!
 
+{% include /adunits/inner-adsense-inarticle-1.html %}
+
 {% include /helpers/blog-track-sc.html source="soundcloud.com/insomniacevents/sets/beyond-wonderland-socal-2018" %}

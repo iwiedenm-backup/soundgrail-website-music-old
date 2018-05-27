@@ -16,3 +16,5 @@ Strap yourselves in because Loud Luxury has whipped up quite a good mix for us t
 This beastly producer has been killing it lately and it was about time he got this well-deserved feature on the Too Future mix series.
 
 Throughout the mix Loud Luxury whips and winds through tracks from a ton of great artists and throws in a few unreleased goodies for you to enjoy. Keep your eye on this rising star and and catch him live sometime soon!
+
+{% include /adunits/inner-adsense-inarticle-1.html %}

@@ -18,3 +18,5 @@ Diplo’s highly anticipated new California EP has pushed the boundaries of genr
 Earlier this week Diplo hosted a release party in Los Angeles. The party featured exclusive clothing, prints and more inspired by California.
 
 Listen to this EP if you haven't already!
+
+{% include /adunits/inner-adsense-inarticle-1.html %}

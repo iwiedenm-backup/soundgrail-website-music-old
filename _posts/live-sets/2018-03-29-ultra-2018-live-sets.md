@@ -16,6 +16,9 @@ Ultra had a banner year for one of its most hyped festivals of the year "Ultra: 
 What you can expect from Ultra's Live Sets in 2018?
 You can definitely expect lots of unreleased music huge moments from both crowds and artists alike. So whether you're hanging out at home, killing time in the car, or whatever else, relax and listen to these live sets from Ultra 2018!
 
+{% include /adunits/inner-adsense-inarticle-1.html %}
+
+
 {% include /helpers/blog-track-sc.html source="soundcloud.com/edm-family-ultra-2018-live-sets/sets/ultra-music-festival-2018" %}
 [Day 1](https://soundcloud.com/edm-family-ultra-2018-live-sets/sets/ultra-music-festival-2018)
 

@@ -19,4 +19,6 @@ However, it steers us in a positive direction and we can't wait for more. This h
 
 Check out the awesome lyric video for RL Grime & Daya's 'I Wanna Know'
 
+{% include /adunits/inner-adsense-inarticle-1.html %}
+
 <iframe width="624" height="360" src="https://www.youtube.com/embed/T5oDPhLwDrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

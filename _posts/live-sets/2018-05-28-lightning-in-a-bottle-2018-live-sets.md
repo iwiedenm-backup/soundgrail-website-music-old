@@ -18,6 +18,8 @@ Whether you missed these artists this year or are looking to relive some moments
 What you can expect from Lightning in a Bottle's Live Sets in 2018?
 You can definitely expect lots of unreleased music huge moments from both crowds and artists alike. So whether you're hanging out at home, killing time in the car, or whatever else, relax and listen to these live sets from Lightning in a Bottle 2018!
 
+{% include /adunits/inner-adsense-inarticle-1.html %}
+
 [Check out the live sets](https://www.1001tracklists.com/source/gp7yrv/lightning-in-a-bottle-festival/index.html)
 
 {% include /helpers/blog-track-sc.html source="soundcloud.com/gravitas-recordings/sets/lib-2018" %}
