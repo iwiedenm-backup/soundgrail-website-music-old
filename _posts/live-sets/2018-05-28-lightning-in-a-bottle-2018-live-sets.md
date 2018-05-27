@@ -9,7 +9,7 @@ post_id: "post-10"
 genre: "live-sets"
 teaser:
   type: "soundcloud"
-  source: ssoundcloud.com/andrewkenny4/dillion-francis-full-set-electric-forest-2018-weekend-1
+  source: soundcloud.com/gravitas-recordings/sets/lib-2018
 ---
 Lightning in a Bottle is one of the best festivals in North America featuring vibey sets from amazing a-list and up-and-coming artists. Artists from all styles and backgrounds will be serenading crowds for hours on end. This festival is a magical place and these sets are definitely sure to impress.
 
@@ -18,6 +18,6 @@ Whether you missed these artists this year or are looking to relive some moments
 What you can expect from Lightning in a Bottle's Live Sets in 2018?
 You can definitely expect lots of unreleased music huge moments from both crowds and artists alike. So whether you're hanging out at home, killing time in the car, or whatever else, relax and listen to these live sets from Lightning in a Bottle 2018!
 
-[Check out the live sets](https://www.1001tracklists.com/source/gfvbhc/electric-forest-festival/index.html)
+[Check out the live sets](https://www.1001tracklists.com/source/gp7yrv/lightning-in-a-bottle-festival/index.html)
 
-{% include /helpers/blog-track-sc.html source="soundcloud.com/andrewkenny4/dillion-francis-full-set-electric-forest-2018-weekend-1" %}
+{% include /helpers/blog-track-sc.html source="soundcloud.com/gravitas-recordings/sets/lib-2018" %}
