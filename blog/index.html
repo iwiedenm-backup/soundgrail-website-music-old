@@ -42,7 +42,7 @@ sitemap:
                 <div class="col-md-7">
                   <div class="post-content">
                     <h3 class="post-title"><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>
-                    <div class="meta"><span class="date">{{ post.date | date_to_string }}</span><span class="comments"><a href="{{site.url}}{{ post.url }}">9 Comments</a></span><span class="category"><em class="red"><a href="#" class="line">{{ post.genre }}</a></em></span></div>
+                    <div class="meta"><span class="date">{{ post.date | date_to_string }}</span> <!--<span class="comments"><a href="{{site.url}}{{ post.url }}">9 Comments</a></span> --> <span class="category"><em class="red"><a href="#" class="line">{{ post.genre }}</a></em></span></div>
                     <p>{{ post.excerpt }}</p>
                     <a href="{{site.url}}{{ post.url }}" class="more">Read more</a> </div>
                   <!-- /.post-content -->
