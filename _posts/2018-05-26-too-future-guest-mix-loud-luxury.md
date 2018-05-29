@@ -6,7 +6,7 @@ excerpt: "This beastly producer has been killing it lately and it was about time
 tags: [music, edm, electronic]
 author: "Samantha"
 post_id: "post-"
-genre: "hip-hop"
+genre: "future-bass"
 teaser:
   type: "soundcloud"
   source: soundcloud.com/too-future-mixes/too-future-guest-mix-102-loud-luxury
