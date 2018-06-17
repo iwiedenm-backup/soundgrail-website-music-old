@@ -16,5 +16,3 @@ KIRUE is easily becoming one of the hottest electronic producers in the scene at
 KIRUE's unique ability to fill a song with emotion is an art untapped by most other producers. Coming out along with this track is an equally awesome music video that we highly recommend checking out. Be on the lookout for more pieces from this brilliant mind coming soon!
 
 Check out "Pull the Trigger" Below...
-
-{% include /helpers/blog-track-sc.html source="soundcloud.com/kirue/pull-the-trigger" %}

@@ -16,5 +16,3 @@ KIRUE has absolutely killing it in the electronic scene recently. Releasing trac
 Originally by LUMBERJVCK, KIRUE's beautiful rework of "Lost in the Moonlight" is full of creative future elements it's sure to have you bouncing back and forth from beginning to end. This record is a piece of art that represents KIRUE's originality. This tune also features the soothing vocals of Kat Nestel, adding to the depth and character of this amazing single.
 
 Check out "LITM" Below...
-
-{% include /helpers/blog-track-sc.html source="soundcloud.com/kirue/litm-remix" %}
