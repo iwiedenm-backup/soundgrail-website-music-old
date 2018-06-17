@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "KIRUE Leaves a Lasting Impression with 'Pull the Trigger' Remix"
-date:   2017-03-15
+date:   2017-09-16
 excerpt: "Originally by Flux Pavilion, KIRUE's beautiful rework of 'Pull the Trigger' is full of creative future elements it's sure to have you bouncing back and forth from beginning to end."
 tags: [music, edm, electronic]
 author: "Samantha"
