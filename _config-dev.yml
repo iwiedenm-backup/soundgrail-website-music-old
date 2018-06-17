@@ -13,19 +13,31 @@ url:                "http://127.0.0.1:4000"
 baseurl: "/"
 address-custom:      "http://127.0.0.1:4000"
 
+# ---------------
+
 trailing: "/"
 enforce_ssl: music.soundgrail.com   # without any protocol
 
 
-default-lastmod: "2018-03-15T00:20:35+00:00"
+default-lastmod: "2018-06-15T00:20:35+00:00"
 
 includes:
 - assets
 
 
 collections:
+  artists:
+    title: Artists
+    output: true
 
 defaults:
+- scope:
+    path: ''
+    type: artists
+  values:
+    permalink: "/artist/:title/"
+    layout: artist
+    twitter:
 - scope:
     path: ''
     type: posts

@@ -1,0 +1,118 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include /default/head.html %}
+
+</head>
+<body class="full-layout">
+<div class="content-wrapper">
+
+  {% include /elements/nav-main.html %}
+
+  <!--/.navbar -->
+
+  <div class="light-wrapper">
+    <div class="container inner tp60">
+      <div class="blog row">
+        <div class="col-sm-8">
+          <div class="blog-content classic-view">
+            <div class="blog-posts">
+              <div class="post">
+                <div class="post-content">
+
+                  {% if page.teaser.type == "image" %}
+                  <figure><img src="{{site.url}}/blog/posts/{{ page.post_id }}/header.jpg" alt="{{ page.title }}" /></figure>
+                  {% elsif page.teaser.type == "soundcloud" %}
+                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//{{ page.teaser.source }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  {% endif %}
+
+
+                  <h1 class="post-title text-center">{{ page.title }}</h1>
+                  <div class="meta text-center"><span class="date">{{ page.date | date_to_string }}</span><span class="comments"><a href="#">7 Comments</a></span><span class="category"><em class="orange"><a href="#" class="line">{{ page.genre }}</a></em></span></div>
+                  {{ content }}
+                  <div class="meta tags text-center"><a href="#">{{page.genre}}</a>, <a href="#">music</a>, <a href="#">artist</a>, </div>
+                  <div class="share share-wrapper text-center"> <a href="#" class="btn btn-share share-facebook">Like</a> <a href="#" class="btn btn-share share-twitter">Tweet</a> <a href="#" class="btn btn-share share-pinterest">Pin It</a> </div>
+                  <!-- /.share-wrapper -->
+
+                  <hr />
+
+                  <div class="post-nav-wrapper">
+                    {% if page.previous.url %}
+                    <div class="post-nav prev">
+                      <div class="meta"><i class="ion-android-arrow-back"></i> Previous Article</div>
+                      <h3 class="post-title"><a href="{{page.previous.url}}">{{page.previous.title}}</a></h3>
+                    </div>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <div class="post-nav next">
+                      <div class="meta">Next Article <i class="ion-android-arrow-forward"></i></div>
+                      <h3 class="post-title"><a href="{{page.next.url}}">{{page.next.title}}</a></h3>
+                    </div>
+                    {% endif %}
+                  </div>
+
+
+
+                  <!-- /.post-nav -->
+
+                  <hr />
+                  <div class="about-author text-left">
+                    <div class="author-image"> <img alt="Picture of SoundGrail author Ian" src="/assets/style/images/art/author.jpg" /> </div>
+                    <h4>About the Author</h4>
+                    <p>Ian is an official blogger of SoundGrail and prefers heavy hitters with lush elements.</p>
+                    <!-- <ul class="social">
+                      <li> <a href="#"><i class="ion-social-facebook"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-twitter"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-instagram"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-vimeo"></i></a> </li>
+                      <li> <a href="#"><i class="ion-social-linkedin"></i></a> </li>
+                    </ul> -->
+                    <div class="clearfix"></div>
+                  </div>
+                  <!-- .about-author -->
+
+                  <hr />
+                  <div id="comments" class="text-left">
+                    <h4>Comments</h4>
+                    {% include /modules/comments.html %}
+                  </div>
+                  <!-- /#comments -->
+
+                  <hr />
+                </div>
+                <!-- /.post-content -->
+
+              </div>
+              <!-- /.post -->
+
+            </div>
+            <!-- /.blog-posts -->
+
+          </div>
+          <!-- /.classic-view -->
+
+        </div>
+        <!-- /.blog-content -->
+
+        {% include /modules/sidebar-blog.html %}
+
+
+        <!-- /column .sidebar -->
+
+      </div>
+      <!-- /.blog -->
+
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.light-wrapper -->
+
+</div>
+
+  {% include /default/foot.html %}
+
+</body>
+</html>
