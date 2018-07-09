@@ -13,11 +13,31 @@ url:                https://music.soundgrail.com
 
 # ---------------
 
+# Site
+title:              SoundGrail Music Blog
+bio:                'SoundGrail Music Blog'
+description:        "SoundGrail is a music site where you can discover new music and playlists. Electronic, edm & hip-hop! Independent music news, reviews, features, interviews and videos."
+
 trailing: "/"
 enforce_ssl: music.soundgrail.com   # without any protocol
 
-
 default-lastmod: "2018-06-15T00:20:35+00:00"
+
+# Socials
+socials:
+  disqus: 'https://soundgrail.disqus.com/embed.js'
+  twitter: soundgrailmusic
+  facebook: soundgrail
+  instagram: soundgrail
+  soundcloud: soundgrailmusic
+  googleplus: 107475342405880796326
+  spotify: 'd4ef02j7tjvls9gkkdtdxcnq9?si=DUi9eGyLShiQoqRQnrkO9g'
+  linkedin: soundgrail
+
+schema:
+  type: "Corporation"
+  logo: "Corporation"
+
 
 includes:
 - assets
@@ -35,6 +55,13 @@ defaults:
   values:
     permalink: "/artist/:title/"
     layout: artist
+    twitter:
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/author/:title/"
+    layout: author
     twitter:
 - scope:
     path: ''
@@ -59,10 +86,7 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
-# Comments
-disqus_shortname:   somiibo
-
-# Social
+# Compress
 compress_html:
   clippings: [all]
   comments: ["<!-- ", " -->"]
