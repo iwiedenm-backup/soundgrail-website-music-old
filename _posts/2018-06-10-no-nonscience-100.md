@@ -13,8 +13,8 @@ teaser:
 ---
 No Conscience new single “100” is a dope mixture of Spanish and English hip hop! This hot new single is about No Conscience experience with those who back stabbed him, and those who stood loyal.
 
-{% include /adunits/inner-adsense-inarticle-1.html %}
-
 No Conscience busts through the forefront of his Block Alliance Team with this hit song 100!
 
 No Conscious absolutely nailed this release making for an unforgettable record.
+
+{% include /adunits/inner-adsense-inarticle-1.html %}

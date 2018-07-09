@@ -9,70 +9,115 @@ sitemap:
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   {% include /default/head.html %}
 
 </head>
-<body class="full-layout">
-<div class="content-wrapper">
 
-  {% include /elements/nav-main.html %}
+<body class="bg-light style-default style-rounded">
 
-  <!--/.navbar -->
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+    </div>
+  </div>
 
-  <div class="light-wrapper">
-    <div class="container inner tp60">
-      <div class="blog row">
-        <div class="col-sm-8 blog-content list-view">
-          <div class="blog-content">
-            <div class="blog-post">
+  <!-- Bg Overlay -->
+  <div class="content-overlay">
+  </div>
 
-              {% for post in paginator.posts %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-                {% assign author = site.authors | where: 'title', post.author | first %}
+  {% include /elements/nav.html %}
 
-              <div class="post row">
-                <div class="col-md-5">
+
+  <main class="main oh" id="main">
+
+
+
+    {% include /elements/nav-main.html %}
+
+
+    <div class="main-container container pt-24" id="main-container">
+
+      <!-- Content -->
+      <div class="row">
+
+        <!-- Posts -->
+        <div class="col-lg-8 blog__content">
+
+
+          <section class="section">
+            <!-- <div class="title-wrap title-wrap--line"> -->
+            <div class="title-wrap">
+              <h3 class="section-title">Featured Songs and Artists</h3>
+              <!-- <a href="#" class="all-posts-url">View All</a> -->
+            </div>
+
+
+
+            {% for post in paginator.posts %}
+              {% assign mod3 = forloop.index | modulo: 3 %}
+              {% assign author = site.authors | where: 'title', post.author | first %}
+
+              <article class="entry card post-list">
+                <div class="entry__img-holder post-list__img-holder card__img-holder" style="background-image: url(img/content/list/list_post_1.jpg)">
+                  <!-- <a href="{{site.url}}{{ post.url }}" class="thumb-url"></a> -->
+                  <img src="img/content/list/list_post_1.jpg" alt="" class="entry__img d-none">
                   {% if post.teaser.type == "image" %}
                   <figure class="overlay"><a href="{{site.url}}{{ post.url }}"> <img src="{{site.url}}/blog/posts/{{ post.post_id }}/teaser.jpg" alt="{{ post.title }}" /></a></figure>
                   {% elsif post.teaser.type == "soundcloud" %}
-                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//{{ post.teaser.source }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//{{ post.teaser.source }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                   {% endif %}
                 </div>
-                <!-- /column -->
-                <div class="col-md-7">
-                  <div class="post-content">
-                    <h3 class="post-title"><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>
-                    <div class="meta"><span class="date">{{ post.date | date_to_string }}</span> <!--<span class="comments"><a href="{{site.url}}{{ post.url }}">9 Comments</a></span> --> <span class="category"><em class="red"><a href="#" class="line">{{ post.genre }}</a></em></span></div>
-                    <p>{{ post.excerpt }}</p>
-                    <a href="{{site.url}}{{ post.url }}" class="more">Read more</a> </div>
-                  <!-- /.post-content -->
-                </div>
-                <!-- /column -->
-              </div>
 
-              {% if mod3 == 0 %}
-              <div class="post">
-                <div class="box box-bg bg-white">
-                  <div class="row">
-                    <div class="col-12">
-                      {% include /adunits/inner-adsense-infeed.html %}
-                    </div>
+                <div class="entry__body post-list__body card__body">
+                  <div class="entry__header">
+                    <h2 class="entry__title">
+                      <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a>
+                      <!-- <a href="categories.html" class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--blue">Business</a> -->
+                    </h2>
+                    <a href="{{ site.url }}/blog/{{ post.genre }}" class="entry__meta-category entry__meta-category--label entry__meta-category--green">{{ post.genre }}</a>
+                    <ul class="entry__meta">
+                      <li class="entry__meta-author">
+                        <span>by</span>
+                        <a href="#">{{ post.author }}</a>
+                      </li>
+                      <li class="entry__meta-date">
+                        {{ post.date | date_to_string }}
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="entry__excerpt">
+                    <p>{{ post.excerpt }}...</p>
                   </div>
                 </div>
-              </div>
-              {% endif %}
+              </article>
 
+            {% if mod3 == 0 %}
+            <article class="entry card post-list">
+
+              {% include /adunits/inner-adsense-infeed.html %}
+
+            </article>
+            {% endif %}
+
+          {% endfor %}
+
+
+
+          <nav class="pagination">
+            <a href="{{site.url}}/blog/" class="pagination__page pagination__icon pagination__page--next"><i class="ui-arrow-left"></i></a>
+            {% for num in (1..paginator.total_pages) %}
+            {% if num == 1 %}
+            <a href="{{site.url}}/blog/" class="pagination__page {% if paginator.page == num %}pagination__page--current{% endif %}">1</a>
+            {% else %}
+            <a href="{{site.url}}/blog/page{{num}}{{site.trailing}}" class="pagination__page {% if paginator.page == num %}pagination__page--current{% endif %}">{{num}}</a>
+            {% endif %}
             {% endfor %}
+            <a href="{{site.url}}/blog/" class="pagination__page pagination__icon pagination__page--next"><i class="ui-arrow-right"></i></a>
+          </nav>
 
-
-            </div>
-            <!-- /.blog-posts -->
-
-          </div>
-          <!-- /.blog-content -->
-
-
-          <div class="pagination">
+          <!-- <div class="pagination">
             <ul>
               <li><a class="btn btn-square btn-icon" href="{{site.url}}/blog/"><i class="ion-android-arrow-back"></i></a></li>
               {% for num in (1..paginator.total_pages) %}
@@ -86,26 +131,57 @@ sitemap:
 
 
             </ul>
-          </div>
-          <!-- /.pagination -->
+          </div> -->
+
+
+          </section>
+
+
+
+
+
+
+
+
+
+
+          <!-- Latest News -->
+
 
         </div>
-        <!-- /.blog-content -->
+        <!-- end posts -->
 
-        {% include /modules/sidebar-blog.html %}
+        <!-- Sidebar -->
+        <aside class="col-lg-4 sidebar sidebar--right">
+          {% include /modules/sidebar-blog.html %}
+        </aside> <!-- end sidebar -->
 
+      </div> <!-- end content -->
 
+      <!-- Ad Banner 728 -->
+      <div class="text-center pb-48">
+        <a href="#">
+          <img src="/assets/img/content/placeholder_728.jpg" alt="">
+        </a>
       </div>
-      <!-- /.blog -->
 
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.light-wrapper -->
 
-</div>
+
+
+
+
+
+    </div> <!-- end main container -->
+
+    {% include /elements/foot.html %}
+
+
+  </main> <!-- end main-wrapper -->
+
 
   {% include /default/foot.html %}
+
+
 
 </body>
 </html>

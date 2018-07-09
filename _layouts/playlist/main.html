@@ -1,0 +1,93 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% include /default/head.html %}
+
+</head>
+
+<body class="bg-light style-default style-rounded">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Bg Overlay -->
+  <div class="content-overlay"></div>
+
+  {% include /elements/nav.html %}
+
+
+  <main class="main oh" id="main">
+
+
+    {% include /elements/nav-main.html %}
+
+
+    <div class="main-container container pt-24" id="main-container">
+
+      <!-- Content -->
+      <div class="row">
+
+        <!-- Posts -->
+        <div class="col-lg-8 blog__content">
+
+
+          {{ content }}
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Latest News -->
+
+
+        </div>
+        <!-- end posts -->
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4 sidebar sidebar--right">
+          {% include /modules/sidebar-blog.html %}
+        </aside> <!-- end sidebar -->
+
+      </div> <!-- end content -->
+
+      <!-- Ad Banner 728 -->
+      <div class="text-center pb-48">
+        <a href="#">
+          <img src="/assets/img/content/placeholder_728.jpg" alt="">
+        </a>
+      </div>
+
+
+
+
+
+
+
+    </div> <!-- end main container -->
+
+    {% include /elements/foot.html %}
+
+
+  </main> <!-- end main-wrapper -->
+
+
+  {% include /default/foot.html %}
+
+
+
+</body>
+</html>

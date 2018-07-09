@@ -5,7 +5,7 @@ date:   2017-09-19
 excerpt: "KIRUE takes the stage as a distinguished performer winning the hearts of electronic music lovers worldwide with captivating records and stunning live performances."
 tags: [music, edm, electronic]
 author: "Samantha"
-post_id: "post-8"
+post_id: "artist-1"
 genre: "future-bass"
 teaser:
   type: "soundcloud"
@@ -25,3 +25,7 @@ KIRUE attended college in Los Angeles where he would spend much time making musi
 KIRUE has experienced quite a large rise as an artist in the recent months. His dedication to his music over the past few years have landed him at huge opening slots & collaborations with notable artists such as Not Your Dope, KENSEN, MAX and more.
 
 See the full [interview with KIRUE here](https://music.soundgrail.com/blog/kirue-interview/)
+
+Follow Kirue:
+[KIRUE on SoundCloud](https://soundcloud.com/kirue)
+[KIRUE on Spotify](https://open.spotify.com/artist/1k6DRF1jd1tmb1oxEQ0UNq)

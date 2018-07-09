@@ -1,0 +1,66 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% include /default/head.html %}
+
+</head>
+
+<body class="bg-light style-default style-rounded">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Bg Overlay -->
+  <div class="content-overlay"></div>
+
+  {% include /elements/nav.html %}
+
+
+  <main class="main oh" id="main">
+
+    {% include /elements/nav-main.html %}
+
+  <!-- Breadcrumbs -->
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="{{site.url}}" class="breadcrumbs__url">Home</a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--current">
+        {{page.breadcrumb}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-container container" id="main-container">
+    <!-- post content -->
+    {{content}}
+    <!-- end post content -->
+  </div>
+  <!-- end main container -->
+
+  <!-- Footer -->
+  {% include /elements/foot.html %}
+
+
+  <div id="back-to-top">
+    <a href="#top" aria-label="Go to top"><i class="ui-arrow-up"></i></a>
+  </div>
+
+</main> <!-- end main-wrapper -->
+
+
+  {% include /default/foot.html %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% include /default/head.html %}
+
+</head>
+
+<body class="bg-light style-default style-rounded">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Bg Overlay -->
+  <div class="content-overlay"></div>
+
+  {% include /elements/nav.html %}
+
+
+  <main class="main oh" id="main">
+
+    {% include /elements/nav-main.html %}
+
+
+    <div class="main-container container pt-24" id="main-container">
+      <!-- Content -->
+      <div class="row">
+        <div class="col-lg-8 blog__content mb-72">
+          <div class="content-box">
+            <!-- standard post -->
+            <article class="entry mb-0">
+              <div class="single-post__entry-header entry__header">
+                <a href="{{site.url}}" class="entry__meta-category entry__meta-category--label entry__meta-category--green">Playlist</a>
+                <h1 class="single-post__entry-title">
+                  {{page.playlist.header}}
+                </h1>
+
+                <!-- <div class="entry__meta-holder">
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <span>by</span>
+                      <a href="#">DeoThemes</a>
+                    </li>
+                    <li class="entry__meta-date">
+                      Jan 21, 2018
+                    </li>
+                  </ul>
+
+                  <ul class="entry__meta">
+                    <li class="entry__meta-views">
+                      <i class="ui-eye"></i>
+                      <span>1356</span>
+                    </li>
+                    <li class="entry__meta-comments">
+                      <a href="#">
+                        <i class="ui-chat-empty"></i>13
+                      </a>
+                    </li>
+                  </ul>
+                </div> -->
+              </div> <!-- end entry header -->
+
+              <div class="entry__img-holder">
+                <img src="img/content/single/single_post_featured_img.jpg" alt="" class="entry__img">
+                <iframe src="{{page.playlist.link}}" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+              </div>
+
+              <div class="entry__article-wrap">
+
+                <!-- Share -->
+                {% include /modules/share.html %}
+
+                 <!-- share -->
+
+                <div class="entry__article">
+                  {{content}}
+                </div> <!-- end entry article -->
+              </div> <!-- end entry article wrap -->
+
+
+              <!-- Newsletter Wide -->
+
+            </article> <!-- end standard post -->
+
+            <!-- Comments -->
+            <div class="entry-comments">
+              <div class="title-wrap title-wrap--line">
+                <h3 class="section-title">Comments</h3>
+              </div>
+              {% include /modules/comments.html %}
+            </div> <!-- end comments -->
+
+          </div> <!-- end content box -->
+        </div> <!-- end post content -->
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4 sidebar sidebar--right">
+          {% include /modules/sidebar-blog.html %}
+        </aside> <!-- end sidebar -->
+
+      </div> <!-- end content -->
+
+      <!-- Ad Banner 728 -->
+      <div class="text-center pb-48">
+        <a href="#">
+          <img src="/assets/img/content/placeholder_728.jpg" alt="">
+        </a>
+      </div>
+
+
+
+
+
+
+
+    </div> <!-- end main container -->
+
+    {% include /elements/foot.html %}
+
+
+  </main> <!-- end main-wrapper -->
+
+
+  {% include /default/foot.html %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+---
+layout: null
+title: Electronic Music Blog - Discover New Songs And Playlists - SoundGrail
+description: SoundGrail is a music blog that helps you discover new music and playlists. Electronic, edm & hip-hop! Independent music news, reviews, features, interviews and videos.
+breadcrumb: Blog
+sitemap:
+    priority: 1.0
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include /default/head.html %}
+
+</head>
+<body class="full-layout">
+<div class="content-wrapper">
+
+  {% include /elements/nav-main.html %}
+
+  <!--/.navbar -->
+
+
+  <div class="light-wrapper">
+    <div class="container inner tp60">
+      <div class="blog row">
+        <div class="col-sm-8 blog-content list-view">
+          <div class="blog-content">
+            <div class="blog-post">
+
+              {% for post in paginator.posts %}
+                {% assign mod3 = forloop.index | modulo: 3 %}
+                {% assign author = site.authors | where: 'title', post.author | first %}
+
+              <div class="post row">
+                <div class="col-md-5">
+                  {% if post.teaser.type == "image" %}
+                  <figure class="overlay"><a href="{{site.url}}{{ post.url }}"> <img src="{{site.url}}/blog/posts/{{ post.post_id }}/teaser.jpg" alt="{{ post.title }}" /></a></figure>
+                  {% elsif post.teaser.type == "soundcloud" %}
+                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//{{ post.teaser.source }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  {% endif %}
+                </div>
+                <!-- /column -->
+                <div class="col-md-7">
+                  <div class="post-content">
+                    <h3 class="post-title"><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>
+                    <div class="meta"><span class="date">{{ post.date | date_to_string }}</span> <!--<span class="comments"><a href="{{site.url}}{{ post.url }}">9 Comments</a></span> --> <span class="category"><em class="red"><a href="#" class="line">{{ post.genre }}</a></em></span></div>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{site.url}}{{ post.url }}" class="more">Read more</a> </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /column -->
+              </div>
+
+              {% if mod3 == 0 %}
+              <div class="post">
+                <div class="box box-bg bg-white">
+                  <div class="row">
+                    <div class="col-12">
+                      {% include /adunits/inner-adsense-infeed.html %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+
+            {% endfor %}
+
+
+            </div>
+            <!-- /.blog-posts -->
+
+          </div>
+          <!-- /.blog-content -->
+
+
+          <div class="pagination">
+            <ul>
+              <li><a class="btn btn-square btn-icon" href="{{site.url}}/blog/"><i class="ion-android-arrow-back"></i></a></li>
+              {% for num in (1..paginator.total_pages) %}
+              {% if num == 1 %}
+              <li class="{% if paginator.page == num %}active{% endif %}"><a class="btn btn-square" href="{{site.url}}/blog/"><span>1</span></a></li>
+              {% else %}
+              <li class="{% if paginator.page == num %}active{% endif %}"><a class="btn btn-square" href="{{site.url}}/blog/page{{num}}{{site.trailing}}"><span>{{num}}</span></a></li>
+              {% endif %}
+              {% endfor %}
+              <li><a class="btn btn-square btn-icon" href="{{site.url}}/blog/"><i class="ion-android-arrow-forward"></i></a></li>
+
+
+            </ul>
+          </div>
+          <!-- /.pagination -->
+
+        </div>
+        <!-- /.blog-content -->
+
+        {% include /modules/sidebar-blog.html %}
+
+
+      </div>
+      <!-- /.blog -->
+
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.light-wrapper -->
+
+</div>
+
+  {% include /default/foot.html %}
+
+</body>
+</html>

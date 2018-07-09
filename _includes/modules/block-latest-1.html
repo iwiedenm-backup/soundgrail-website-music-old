@@ -1,0 +1,82 @@
+<!-- Featured Posts Grid -->
+<section class="featured-posts-grid">
+  <div class="container">
+    <div class="row row-8">
+
+      <div class="col-lg-6">
+        {% for post in site.posts limit:1 %}
+        <!-- Large post -->
+        <div class="featured-posts-grid__item featured-posts-grid__item--lg">
+          <article class="entry card featured-posts-grid__entry">
+            <div class="entry__img-holder card__img-holder">
+              <a href="{{site.url}}{{ post.url }}">
+                {% if post.teaser.type == "image" %}
+                <img src="{{site.url}}/blog/posts/{{ post.post_id }}/teaser.jpg" alt="" class="entry__img">
+                {% elsif post.teaser.type == "soundcloud" %}
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//{{ post.teaser.source }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                {% endif %}
+              </a>
+              <a href="{{ site.url }}/blog/{{ post.genre }}" class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--green">{{ post.genre }}</a>
+            </div>
+
+            <div class="entry__body card__body">
+              <h2 class="entry__title">
+                <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <ul class="entry__meta">
+                <li class="entry__meta-author">
+                  <span>by</span>
+                  <a href="#">{{ post.author }}</a>
+                </li>
+                <li class="entry__meta-date">
+                  {{ post.date | date_to_string }}
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div> <!-- end large post -->
+        {% endfor %}
+
+      </div>
+      <div class="col-lg-6">
+
+        <!-- Small post -->
+        {% for post in site.posts offset:1 limit:3 %}
+        <div class="featured-posts-grid__item featured-posts-grid__item--sm">
+          <article class="entry card post-list featured-posts-grid__entry">
+            <div class="entry__img-holder post-list__img-holder card__img-holder" style="background-image: url(/assets/img/content/hero/hero_post_1.jpg)">
+              <!-- <a href="single-post.html" class="thumb-url"></a> -->
+              {% if post.teaser.type == "image" %}
+              <img src="{{site.url}}/blog/posts/{{ post.post_id }}/teaser.jpg" alt="" class="entry__img">
+              {% elsif post.teaser.type == "soundcloud" %}
+              <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//{{ post.teaser.source }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              {% endif %}
+              <a href="{{ site.url }}/blog/{{ post.genre }}" class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--green">{{ post.genre }}</a>
+              <!-- <a href="categories.html" class="entry__meta-category entry__meta-category--label entry__meta-category--align-in-corner entry__meta-category--violet">World</a> -->
+            </div>
+
+            <div class="entry__body post-list__body card__body">
+              <h2 class="entry__title">
+                <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <ul class="entry__meta">
+                <li class="entry__meta-author">
+                  <span>by</span>
+                  <a href="#">{{ post.author }}</a>
+                </li>
+                <li class="entry__meta-date">
+                  {{ post.date | date_to_string }}
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div> <!-- end post -->
+        {% endfor %}
+
+      </div> <!-- end col -->
+
+
+
+    </div>
+  </div>
+</section> <!-- end featured posts grid -->

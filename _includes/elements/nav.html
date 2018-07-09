@@ -1,0 +1,82 @@
+<!-- Sidenav -->
+<header class="sidenav" id="sidenav">
+
+  <!-- close -->
+  <div class="sidenav__close">
+    <button class="sidenav__close-button" id="sidenav__close-button" aria-label="close sidenav">
+      <i class="ui-close sidenav__close-icon"></i>
+    </button>
+  </div>
+
+  <!-- Nav -->
+  <nav class="sidenav__menu-container">
+    <ul class="sidenav__menu" role="menubar">
+      <li>
+        <a href="{{site.url}}" class="sidenav__menu-url">Home</a>
+      </li>
+
+
+      <li>
+        <a href="#" class="sidenav__menu-url">Spotify Playlists</a>
+        <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+        <ul class="sidenav__menu-dropdown">
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/6va7zra7cPqPdV77AR4QDb?si=tWhtvHSMSyiMxSBaWf1ZGA" class="sidenav__menu-url"> Selects Playlist</a></li>
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/2Qo21nS5jkdec0gFfZ7Lzh?si=hTKiI5OYQSqkZ0MHglxgpg" class="sidenav__menu-url"> Chill Playlist</a></li>
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/3iDzamjyycYASUsX6uuTf8?si=u6Bf7KgRTmOBlR0qVNJ-sg" class="sidenav__menu-url"> Party Playlist</a></li>
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/0Wmxb6y0P3JAmDDJGL1MC4?si=yge7dwYcRCer58wUp1Kt0A" class="sidenav__menu-url"> Trippy Playlist</a></li>
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/6BOyGsVAUtGNjznKaXDnpi?si=kd6uehugQe6KKcxeG0CHtw" class="sidenav__menu-url"> Bass Playlist</a></li>
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/4lXHDbqeNH4voNj29oruJY?si=BK2s0PxJTci4c_lvBMphPw" class="sidenav__menu-url"> Workout Playlist</a></li>
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/31jyNIOBwr1OA4OfP3JwDq?si=rDKufSIQRemwH1gQBZipYQ" class="sidenav__menu-url"> Productivity Playlist</a></li>
+          <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/1bxQ9quSkfxlhxRZAE2amm?si=R3TNyrEuRfOe2rulymCpFQ" class="sidenav__menu-url"> Urban Playlist</a></li>
+          <!-- <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/0jI0qfk9ci3ifMDBvI3j4C?si=T2fTc1JUTqiR87YwKP39fA" class="sidenav__menu-url"> Lookouts Playlist</a></li> -->
+          <!-- <li><a href="https://open.spotify.com/user/d4ef02j7tjvls9gkkdtdxcnq9/playlist/0u77nYVStkLT5HFu1Yb4kV?si=4jYsjZV7QVKjdLjBp7J1HQ" class="sidenav__menu-url"> Urban Playlist</a></li> -->
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="sidenav__menu-url">Pages</a>
+        <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button>
+        <ul class="sidenav__menu-dropdown">
+          <li><a href="{{site.url}}/about/" class="sidenav__menu-url">About</a></li>
+          <li><a href="{{site.url}}/about/" class="sidenav__menu-url">Contact</a></li>
+          <li><a href="https://soundgrail.com/promotion/music-blog-feature/" class="sidenav__menu-url">Submit Music</a></li>
+          <li><a href="https://soundgrail.com/promotion/" class="sidenav__menu-url">Promote your Music</a></li>
+        </ul>
+      </li>
+
+      <!-- Categories -->
+      <!-- <li>
+        <a href="#" class="sidenav__menu-url">World</a>
+      </li>
+      <li>
+        <a href="#" class="sidenav__menu-url">Business</a>
+      </li>
+      <li>
+        <a href="#" class="sidenav__menu-url">Fashion</a>
+      </li>
+      <li>
+        <a href="#" class="sidenav__menu-url">Lifestyle</a>
+      </li>
+      <li>
+        <a href="#" class="sidenav__menu-url">Advertise</a>
+      </li> -->
+    </ul>
+  </nav>
+
+  <div class="socials sidenav__socials">
+    <a class="social social-facebook" href="https://facebook.com/{{site.socials.facebook}}" target="_blank" aria-label="facebook">
+      <i class="ui-facebook"></i>
+    </a>
+    <a class="social social-twitter" href="https://twitter.com/{{site.socials.twitter}}" target="_blank" aria-label="twitter">
+      <i class="ui-twitter"></i>
+    </a>
+    <a class="social social-google-plus" href="https://plus.google.com/u/4/{{site.socials.googleplus}}" target="_blank" aria-label="google">
+      <i class="ui-google"></i>
+    </a>
+    <!-- <a class="social social-youtube" href="#" target="_blank" aria-label="youtube">
+      <i class="ui-youtube"></i>
+    </a> -->
+    <!-- <a class="social social-instagram" href="#" target="_blank" aria-label="instagram">
+      <i class="ui-instagram"></i>
+    </a> -->
+  </div>
+</header> <!-- end sidenav -->
