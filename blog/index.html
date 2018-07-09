@@ -62,7 +62,7 @@ sitemap:
               <article class="entry card post-list">
                 <div class="entry__img-holder post-list__img-holder card__img-holder" style="background-image: url(img/content/list/list_post_1.jpg)">
                   <!-- <a href="{{site.url}}{{ post.url }}" class="thumb-url"></a> -->
-                  <img src="img/content/list/list_post_1.jpg" alt="" class="entry__img d-none">
+                  <!-- <img src="img/content/list/list_post_1.jpg" alt="" class="entry__img d-none"> -->
                   {% if post.teaser.type == "image" %}
                   <figure class="overlay"><a href="{{site.url}}{{ post.url }}"> <img src="{{site.url}}/blog/posts/{{ post.post_id }}/teaser.jpg" alt="{{ post.title }}" /></a></figure>
                   {% elsif post.teaser.type == "soundcloud" %}
