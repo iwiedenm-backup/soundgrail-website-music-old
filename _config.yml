@@ -36,7 +36,7 @@ socials:
 
 schema:
   type: "Corporation"
-  logo: "Corporation"
+  logo: "https://soundgrail.com/assets/images/og/soundgrail-logo-og.png"
 
 
 includes:
