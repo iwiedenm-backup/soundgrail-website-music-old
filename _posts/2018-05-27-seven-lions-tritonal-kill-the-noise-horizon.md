@@ -10,6 +10,8 @@ genre: "future-bass"
 teaser:
   type: "soundcloud"
   source: soundcloud.com/seven-lions/seven-lions-tritonal-and-killl-the-noise-feat-haliene-horizon
+og:
+  imageExternal: "https://i1.sndcdn.com/artworks-000349457367-7pjb2g-t500x500.jpg"
 ---
 'Horizon' is the latest brainchild of 3 top-tier artists Seven Lions, Tritonal, and Kill the Noise. This record begins off with ethereal synths and dreamy vocals by Haliene.
 

@@ -6,8 +6,13 @@
 <meta name="twitter:description" content="{{ page.description }}" />
 <meta name="twitter:widgets:theme" content="light">
 {% if page.layout == 'post' %}
-<!-- <meta name="twitter:image" content="https://music.soundgrail.com/blog/posts/{{ page.post_id }}/teaser.jpg" /> -->
-<meta name="twitter:image" content="https://soundgrail.com/assets/images/og/soundgrail-logo-og.png" />
+
+  {% if page.og.imageExternal != null %}
+  <meta name="twitter:image" content="{{ page.og.imageExternal }}" />
+  {% else %}
+  <meta name="twitter:image" content="https://soundgrail.com/assets/images/og/soundgrail-logo-og.png" />
+  {% endif %}
+
 {% elsif page.og.image != null %}
 <meta name="twitter:image" content="https://music.soundgrail.com/assets/images/og{{ page.og.image }}" />
 {% else %}
@@ -16,13 +21,18 @@
 {% endif %}
 
 <!-- Social: Facebook / Open Graph -->
-<meta property="og:url" content="https://music.soundgrail.com/{{ page.url }}" />
+<meta property="og:url" content="https://music.soundgrail.com{{ page.url }}" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
 {% if page.layout == 'post' %}
-<!-- <meta property="og:image" content="https://music.soundgrail.com/blog/posts/{{ page.post_id }}/teaser.jpg" /> -->
-<meta property="og:image" content="https://soundgrail.com/assets/images/og/soundgrail-logo-og.png" />
+
+  {% if page.og.imageExternal != null %}
+  <meta property="og:image" content="{{ page.og.imageExternal }}" />
+  {% else %}
+  <meta property="og:image" content="https://soundgrail.com/assets/images/og/soundgrail-logo-og.png" />
+  {% endif %}
+
 {% elsif page.og.image != null %}
 <meta property="og:image" content="https://music.soundgrail.com/assets/images/og{{ page.og.image }}" />
 {% else %}
