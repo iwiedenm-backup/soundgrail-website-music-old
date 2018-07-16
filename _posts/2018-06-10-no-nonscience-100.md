@@ -2,7 +2,7 @@
 layout: post
 title:  "No Conscience Releases catchy Single '100'"
 date:   2018-06-10
-excerpt: "No Conscience new single '100'”' is a dope mixture of Spanish and English hip hop!"
+excerpt: "No Conscience new single '100' is a dope mixture of Spanish and English hip hop!"
 tags: [music, edm, electronic]
 author: "Samantha"
 post_id: "post-"
