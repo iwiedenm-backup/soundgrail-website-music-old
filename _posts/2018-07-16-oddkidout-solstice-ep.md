@@ -1,12 +1,12 @@
 ---
 layout: "post"
 title: "OddKidOut Unveils Fresh 4-track EP 'Solstice'"
-date: 2018-07-16
-excerpt: "It's easy to get excited whenever we see the name Baauer. This time he's not playing around with his new single '3AM'."
+date: 2018-07-17
+excerpt: "OddKidOut, a Philadelphia native, has made his presence quite well known by now with the release of his EP titled 'Solstice' on OWSLA."
 tags: [music, edm, electronic]
 author: Samantha
 
-genre: "hip-hop"
+genre: "future-bass"
 teaser:
   type: "soundcloud"
   source: soundcloud.com/owslaofficial/sets/oddkidout-solstice-ep
