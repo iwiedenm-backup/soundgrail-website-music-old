@@ -5,7 +5,7 @@ url:                "http://127.0.0.1:4000"
 # Site
 title:              SoundGrail Music Blog
 bio:                'SoundGrail Music Blog'
-description:        "SoundGrail is a music site where you can discover new music and playlists. Electronic, edm & hip-hop! Independent music news, reviews, features, interviews and videos."
+description:        "SoundGrail is a music site where you can discover new music and playlists. We support electronic, edm & hip-hop music! Independent music news, reviews, features, interviews and videos."
 
 trailing: "/"
 enforce_ssl: music.soundgrail.com   # without any protocol
