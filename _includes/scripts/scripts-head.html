@@ -24,3 +24,38 @@
   src="https://www.facebook.com/tr?id=334408960631005&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+
+
+<script type="text/javascript">
+
+
+//buttons
+var wait_buttonLoaded = false;
+check_buttonLoaded();
+
+function check_buttonLoaded() {
+  if (document.getElementById(field_submit)) {
+    wait_buttonLoaded = true;
+    post_buttonLoaded();
+  }
+  if (wait_buttonLoaded = false) {
+    setTimeout(function () {
+      check_buttonLoaded();
+    }, 1000);
+  }
+}
+
+function post_buttonLoaded() {
+  document.getElementById(field_submit).addEventListener("click", function(){
+    console.log('FB track '+totalCost)
+    fbq('track', 'Purchase', {
+      value: totalCost,
+      content_ids: 'SOMIIBO_MONTHLY',
+    });
+  });
+}
+
+
+
+
+</script>
