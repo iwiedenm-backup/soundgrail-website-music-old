@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "If Excision and Illenium together on a single track doesn't get you excited then not much else in this world will either. Check out 'Gold' now!"
+title: "Excision and Illenium together on a single track. Get excited. Check out 'Gold' now!"
 date: 2018-07-18
 excerpt: "Excision and Illenium Release Anticipated Collab 'Gold (Stupid Love)'"
 tags: [music, edm, electronic]
