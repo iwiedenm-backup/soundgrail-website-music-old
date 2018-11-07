@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Kloud's releases single 'Cold Fire' with music video"
-date: 2018-11-06
+date: 2018-10-06
 excerpt: "KLOUD releases music video to accompany his single 'Cold Fire'"
 tags: [music, edm, electronic]
 author: samantha
